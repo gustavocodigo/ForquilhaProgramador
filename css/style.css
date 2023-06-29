@@ -210,12 +210,14 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .about-me-section {
     width: 1900px;
     max-width: 100%;
     padding: 20px;
+    border: 2px solid black;
     
 }
 
@@ -244,6 +246,7 @@ footer {
     margin: 100px;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 
