@@ -294,14 +294,4 @@ footer {
 
 #send_form_input:hover {
     cursor: pointer;
-    transition: 0.5s;
-    background-color: #dae2ff
-}
-
-
-
-#send_form_input:active {
-    font-size: 24px; 
-    color: white;
-    background-color: #a2b3f1
 }

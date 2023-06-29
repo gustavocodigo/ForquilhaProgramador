@@ -44,7 +44,7 @@ function send_email(contact, about) {
 
 
 
-function validar_enviar_email() {
+function validar_enviar_email(event) {
     event.preventDefault()
     let contato = document.getElementById("contato").value
     document.getElementById("contato").value = ""
