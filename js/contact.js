@@ -51,4 +51,6 @@ function validar_enviar_email(event) {
     let sobre = document.getElementById("sobre").value
     document.getElementById("sobre").value = ""
     send_email(contato, sobre)
+    document.getElementById("send-email-form").style.display = "none"
+    document.getElementById("sent-email").style.display = "flex"
 }
