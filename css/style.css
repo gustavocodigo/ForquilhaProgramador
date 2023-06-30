@@ -214,8 +214,8 @@ footer {
         z-index: 999;
         gap: 100px;
        ; /*esconder*/
-       
         transition: 1s;
+        display: none
     }
 
 

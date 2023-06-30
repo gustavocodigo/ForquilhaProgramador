@@ -9,5 +9,5 @@ function toggle_menu() {
 }
 
 document.addEventListener("DOMContentLoaded", ()=> {
-    document.getElementById("navigation").style.display = "none"
+   
 })
