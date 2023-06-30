@@ -166,7 +166,6 @@ svg img {
 }
 
 
-
 footer {
     margin-top: auto;
     height: 114px;
@@ -182,10 +181,29 @@ footer {
 .header-logo-small {
     display: none;
  }
+
+ .hiddendesktop {
+    display: none;
+}
 @media (max-width: 800px) {
-    header>nav {
-        display: none;
+
+    .hiddendesktop {
+        display: block;
     }
+    header>nav {
+        position: absolute;
+        padding: 90px;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgb(50, 142, 209);
+        width: 100%;
+        z-index: 999;
+        gap: 100px;
+        display: none ; /*esconder*/
+    }
+
+
     .banner-container img {
        max-width: 100%;
     }

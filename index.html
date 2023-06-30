@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
     <title>Document</title>
 </head>
 
@@ -13,11 +14,23 @@
     <header>
         <img src="./assets/logo.png" class="header-logo"/>
         <img src="./assets/logosmall.png" class="header-logo-small"/>
-        <nav>
-            <a href="./index.html" class="selected-nav">HOME</a>
-            <a href="./services.html">SERVIÇOS</a>
+        <nav id="navigation" >
+            <div class="hiddendesktop" >
+                <svg style="margin-left: auto" xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="currentColor" class="hiddendesktop" viewBox="0 0 16 16" onclick="toggle_menu()">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+           
+            <a href="./index.html"class="selected-nav" >HOME</a>
+            <a href="./services.html" >SERVIÇOS</a>
             <a href="./contact.html">CONTATO</a>
         </nav>
+        <div class="hiddendesktop" >
+            <svg onclick="toggle_menu()" xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="currentColor" class="hiddendesktop" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </div>
+
     </header>
     <section class="banner-container">
         <div class="description-container">

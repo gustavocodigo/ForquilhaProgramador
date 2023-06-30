@@ -54,3 +54,5 @@ function validar_enviar_email(event) {
     document.getElementById("send-email-form").style.display = "none"
     document.getElementById("sent-email").style.display = "flex"
 }
+
+
