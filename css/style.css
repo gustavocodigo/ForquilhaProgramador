@@ -27,7 +27,6 @@ header {
     height: 148px;
     top: 0px;
     background-color: #407BFF;
-    border-bottom: 1px solid #000000;
     padding-left: 87px;
     display: flex;
     align-items: center;
@@ -45,6 +44,7 @@ section {
 header>nav {
     display: flex;
     gap: 55px;
+    transition: 1s;
 }
 
 header>nav>a {
@@ -192,6 +192,17 @@ footer {
     .hiddendesktop {
         display: block;
     }
+
+    @keyframes fadeOut {
+        from {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+        to {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+      }
     header>nav {
         position: absolute;
         padding: 90px;
@@ -202,7 +213,9 @@ footer {
         width: 100%;
         z-index: 999;
         gap: 100px;
-        display: none ; /*esconder*/
+       ; /*esconder*/
+       
+        transition: 1s;
     }
 
 
@@ -218,6 +231,24 @@ footer {
      }
      .idea-container {
         padding: 30px;
+     }
+
+
+     @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+
+     .show-nav-bar {
+        /* transition: 1s;
+        opacity: 1; */
+        animation: fadeIn 1.3s ease forwards;
      }
 }
 

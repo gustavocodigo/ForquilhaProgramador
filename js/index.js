@@ -5,4 +5,9 @@ function toggle_menu() {
     }else{
         nav.style.display = "none"
     }
+    nav.classList.toggle("show-nav-bar")
 }
+
+document.addEventListener("DOMContentLoaded", ()=> {
+    document.getElementById("navigation").style.display = "none"
+})
